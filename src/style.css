@@ -14,7 +14,7 @@ body {
   padding: 20px;
 }
 .main-icon {
-  width: 200px;
+  width: 180px;
 }
 .icon {
   width: 70px;
@@ -34,12 +34,12 @@ a {
 h1 {
   letter-spacing: 5pt;
   font-weight: 600;
-  font-size: 40pt;
+  font-size: 35px;
   margin: 0px;
 }
 h2 {
   letter-spacing: 10pt;
-  font-size: 30pt;
+  font-size: 30px;
   font-weight: 400;
   margin: 0px;
 }
