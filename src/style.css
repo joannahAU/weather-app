@@ -6,16 +6,15 @@ body {
 }
 .card {
   background-color: rgba(255, 255, 255, 0.3);
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
 }
 .main-weather {
   padding: 20px;
 }
 .main-icon {
   width: 200px;
-}
-.card {
-  margin: 200px;
-  padding: 50px;
 }
 .icon {
   width: 70px;
