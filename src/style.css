@@ -63,3 +63,13 @@ h4 {
 button {
   display: inline;
 }
+.sourcecode {
+  font-size: 12px;
+}
+.source {
+  text-align: center;
+  font-size: 12px;
+  text-transform: capitalize;
+  padding: 20px;
+  letter-spacing: 2pt;
+}
