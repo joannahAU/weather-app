@@ -1,7 +1,5 @@
 let currentTime = new Date();
-
 let dateElement = document.querySelector("#date");
-
 let date = currentTime.getDate();
 let hours = currentTime.getHours();
 if (hours < 10) {
@@ -67,12 +65,15 @@ function handleSubmit(event) {
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
+
+searchCity("New York");
+
 let searchForm = document.querySelector("#search-form");
 
 searchForm.addEventListener("submit", handleSubmit);
 
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+// let currentLocationButton = document.querySelector("#current-location-button");
+// currentLocationButton.addEventListener("click", getCurrentLocation);
 //Challenge 3
 //function convertToFahrenheit(event) {
 // event.preventDefault();
