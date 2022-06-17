@@ -58,14 +58,13 @@
             </div>
             <div class="col-6">
               <h1 id="city"></h1>
-              <h5 id="date"></h5>
               <h2 class="units" id="temperature"></h2>
               <h3 class="units">
                 <a href="#" id="celsius-link">°C </a>
                 |
                 <a href="#" id="fahrenheit-link">F</a>
               </h3>
-              <p>
+              <p class="main-description">
                 <strong><span id="description"></span></strong>
                 <br />
                 humidity: <span id="humidity"></span>% | wind:
@@ -73,10 +72,10 @@
               </p>
             </div>
           </div>
-          <h3>5 Day Forecast</h3>
-          <br />
           
-          <div class="row">
+          <div class="row forecast">
+            <h3 class="forecast-title">5 Day Forecast</h3>
+            
             <div class="col">
               <h3>mon</h3>
               <img class="icon" src="icons/sun.png" alt="sunny" />
@@ -107,6 +106,8 @@
               <h4>30°</h4>
             </div>
           </div>
+        </br>
+          <p>last updated: <span id="date"></span></p>
         </div>
           <p class="source"><a href="https://github.com/joannahAU/weather-app" target="_blank" class="sourcecode"
             >open-source code</a

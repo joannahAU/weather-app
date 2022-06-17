@@ -1,35 +1,3 @@
-let currentTime = new Date();
-let dateElement = document.querySelector("#date");
-let date = currentTime.getDate();
-let hours = currentTime.getHours();
-if (hours < 10) {
-  hours = `0${hours}`;
-}
-let minutes = currentTime.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-}
-let year = currentTime.getFullYear();
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-let day = days[currentTime.getDay()];
-let months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-let month = months[currentTime.getMonth()];
-
-dateElement.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}`;
-
 function displayCurrentWeather(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -85,3 +53,35 @@ searchForm.addEventListener("submit", handleSubmit);
 
 // let fahrenheitLink = document.querySelector("#fahrenheit-link");
 // fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let currentTime = new Date();
+let dateElement = document.querySelector("#date");
+let date = currentTime.getDate();
+let hours = currentTime.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
+let minutes = currentTime.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+let year = currentTime.getFullYear();
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let day = days[currentTime.getDay()];
+let months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+let month = months[currentTime.getMonth()];
+
+dateElement.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}`;

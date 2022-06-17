@@ -20,6 +20,7 @@ h1 {
   font-weight: 600;
   font-size: 35px;
   margin: 0px;
+  margin-top: 7px;
 }
 h2 {
   letter-spacing: 10pt;
@@ -70,4 +71,13 @@ h4 {
 }
 .units {
   display: inline;
+}
+.forecast {
+  padding: 10px;
+}
+.forecast-title {
+  padding: 10px;
+}
+.main-description {
+  padding: 10px;
 }
