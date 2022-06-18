@@ -10,6 +10,8 @@ function displayCurrentWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
 }
 
 function searchCity(city) {
