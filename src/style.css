@@ -34,7 +34,7 @@ h3,
 a,
 .forecast-day {
   letter-spacing: 5pt;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
   display: inline;
 }
@@ -76,11 +76,11 @@ a:hover {
 }
 .forecast {
   padding: 10px;
-  padding-top: 30px;
   text-align: center;
 }
 .forecast-title {
   padding-top: 30px;
+  font-size: 25px;
 }
 .main-description {
   padding: 10px;
@@ -94,7 +94,7 @@ a:hover {
 
 .forecast-temperature {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 10px;
 }
 .forecast-temp-max {

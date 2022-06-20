@@ -21,7 +21,7 @@ function displayForecast(response) {
       <div class="col-2">
       <div class="forecast-day">
       ${formatDay(forecastDay.dt)}
-      <img class="icon" src="forecast-icons/${
+      <img class="icon" src="icons/${
         forecastDay.weather[0].icon
       }.png" alt="sunny" />
       </div>
@@ -60,10 +60,7 @@ function displayCurrentWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute(
-    "src",
-    `main-icons/${response.data.weather[0].icon}.png`
-  );
+  iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
 
   getForecast(response.data.coord);
 }
