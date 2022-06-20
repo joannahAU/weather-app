@@ -10,7 +10,9 @@ h3,
 h4,
 h5,
 p,
-a {
+a,
+.forecast-day,
+.forecast-temperature {
   font-family: "Open Sans", sans-serif;
   color: white;
   text-transform: uppercase;
@@ -29,7 +31,8 @@ h2 {
   margin: 0px;
 }
 h3,
-a {
+a,
+.forecast-day {
   letter-spacing: 5pt;
   font-size: 25px;
   text-decoration: none;
@@ -38,11 +41,7 @@ a {
 a:hover {
   color: #ffffff;
 }
-h4 {
-  font-size: 25px;
-  font-weight: 600;
-  margin: 10px;
-}
+
 .card {
   background-color: rgba(255, 255, 255, 0.3);
   max-width: 800px;
@@ -54,8 +53,10 @@ h4 {
   margin: 5px;
 }
 .main-weather {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 100px;
 }
 .main-icon {
   width: 180px;
@@ -75,9 +76,11 @@ h4 {
 }
 .forecast {
   padding: 10px;
+  padding-top: 30px;
+  text-align: center;
 }
 .forecast-title {
-  padding-bottom: 20px;
+  padding-top: 30px;
 }
 .main-description {
   padding: 10px;
@@ -87,4 +90,15 @@ h4 {
 }
 .active {
   cursor: default;
+}
+
+.forecast-temperature {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px;
+}
+.forecast-temp-max {
+}
+.forecast-temp-min {
+  opacity: 0.6;
 }
